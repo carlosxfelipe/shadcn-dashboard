@@ -98,7 +98,7 @@ export default function DashboardLayout({
             <div className="flex items-center">
               {/* User Avatar */}
               <div className="bg-blue-500 text-white p-2 rounded-full w-12 h-12 flex items-center justify-center">
-                FH
+                CF
               </div>
             </div>
           </div>
