@@ -8,14 +8,15 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import Autoplay from "embla-carousel-autoplay";
+// import Autoplay from "embla-carousel-autoplay";
 
 export default function Page() {
   return (
     <div className="w-full flex justify-center">
       <Carousel
         className="w-full max-w-xs"
-        plugins={[Autoplay({ delay: 1000 })]}
+        // plugins={[Autoplay({ delay: 1000 })]}
+        autoplay={1500}
         opts={{
           // dragFree: true,
           loop: true,

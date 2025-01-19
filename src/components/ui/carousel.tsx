@@ -8,6 +8,8 @@ import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { ArrowLeftIcon, ArrowRightIcon } from "@radix-ui/react-icons";
 
+import Autoplay from "embla-carousel-autoplay";
+
 type CarouselApi = UseEmblaCarouselType[1];
 type UseCarouselParameters = Parameters<typeof useEmblaCarousel>;
 type CarouselOptions = UseCarouselParameters[0];
@@ -17,6 +19,7 @@ type CarouselProps = {
   opts?: CarouselOptions;
   plugins?: CarouselPlugin;
   orientation?: "horizontal" | "vertical";
+  autoplay?: number;
   setApi?: (api: CarouselApi) => void;
 };
 
@@ -53,10 +56,16 @@ const Carousel = React.forwardRef<
       plugins,
       className,
       children,
+      autoplay,
       ...props
     },
     ref
   ) => {
+    if (autoplay) {
+      plugins = plugins ?? [];
+      plugins.push(Autoplay({ delay: autoplay }));
+    }
+
     const [carouselRef, api] = useEmblaCarousel(
       {
         ...opts,
