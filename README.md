@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# shadcn dashboard
 
-## Getting Started
+Este é um projeto [Next.js](https://nextjs.org/) desenvolvido para testar a criação de componentes com [shadcn/ui](https://ui.shadcn.com/).
 
-First, run the development server:
+## Observação
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Eu notei que em determinado momento o comando _npx shadcn@latest add ..._ estava dando erro na instalação, então comecei a utilizar _npx shadcn@2.1.8 add ..._. Vi que há um Issue aberto: [6483](https://github.com/shadcn-ui/ui/issues/6483).
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<p align="center">
+  <img src="./preview.png" alt="Preview do Projeto" />
+</p>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Passos para rodar o projeto
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. **Clone o repositório**
 
-## Learn More
+   ```bash
+   git clone https://github.comcarlosxfelipe/shadcn-dashboard
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+   ```
+   cd shadcn-dashboard
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. **Instale as dependências**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+   ```bash
+   npm install
+   ```
 
-## Deploy on Vercel
+3. **Execute o projeto**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```bash
+   npm run dev
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Licença
+
+Este projeto está licenciado sob a [MIT License](LICENSE). Sinta-se à vontade para usar e modificar o conteúdo conforme necessário.
