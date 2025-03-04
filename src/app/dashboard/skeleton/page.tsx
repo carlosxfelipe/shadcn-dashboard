@@ -11,7 +11,8 @@ import Image from "next/image";
 const getData = async () => {
   await new Promise((resolve) => setTimeout(resolve, 3000));
 
-  return "123456789".split(""); // ['1', '2', '3', '4', '5', '6', '7', '8', '9']
+  // return "123456789".split(""); // ['1', '2', '3', '4', '5', '6', '7', '8', '9']
+  return Array.from({ length: 9 }, (_, i) => (i + 1).toString());
 };
 
 export default async function Page() {
