@@ -25,7 +25,7 @@ export default function Page() {
           </CardContent>
           <CardFooter className="flex justify-between ">
             <Button variant="ghost">Info</Button>
-            <Button>Saiba mais</Button>
+            <Button>Learn More</Button>
           </CardFooter>
         </Card>
       ))}
