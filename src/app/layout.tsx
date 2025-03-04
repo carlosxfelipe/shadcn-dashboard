@@ -28,7 +28,7 @@ export default function RootLayout({
         )}
       >
         {children}
-        <SonnerToaster />
+        <SonnerToaster richColors />
       </body>
     </html>
   );
