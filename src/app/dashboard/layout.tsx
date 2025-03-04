@@ -27,6 +27,7 @@ const links = [
   { name: "slider", href: "slider" },
   { name: "sonner", href: "sonner" },
   { name: "toast", href: "sonner" }, // The toast component is deprecated. Use the sonner component instead.
+  { name: "tabs", href: "tabs" },
 ].sort((a, b) => a.name.localeCompare(b.name));
 
 export default function DashboardLayout({

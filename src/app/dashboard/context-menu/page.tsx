@@ -63,11 +63,11 @@ export default function Page() {
           </ContextMenuCheckboxItem>
           <ContextMenuCheckboxItem>Show Full URLs</ContextMenuCheckboxItem>
           <ContextMenuSeparator />
-          <ContextMenuRadioGroup value="pedro">
+          <ContextMenuRadioGroup value="felipe">
             <ContextMenuLabel inset>People</ContextMenuLabel>
             <ContextMenuSeparator />
-            <ContextMenuRadioItem value="pedro">
-              Pedro Duarte
+            <ContextMenuRadioItem value="felipe">
+              Carlos Felipe Araújo
             </ContextMenuRadioItem>
             <ContextMenuRadioItem value="colm">Colm Tuite</ContextMenuRadioItem>
           </ContextMenuRadioGroup>
