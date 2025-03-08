@@ -7,5 +7,5 @@ async function fetchData() {
 export default async function Page() {
   const data = await fetchData();
 
-  return <div>{JSON.stringify(data, null, 2)}</div>;
+  return <pre>{JSON.stringify(data, null, 2)}</pre>;
 }
