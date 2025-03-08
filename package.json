@@ -38,7 +38,9 @@
     "react-dom": "^18",
     "sonner": "^2.0.1",
     "tailwind-merge": "^2.3.0",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "unique-names-generator": "^4.7.1",
+    "uuid": "^11.1.0"
   },
   "devDependencies": {
     "@types/node": "^20",
